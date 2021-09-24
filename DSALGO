@@ -1,0 +1,32 @@
+//PROGRAM TO SEARCH AN ELEMENT IN 2D ARRAY
+#include <iostream>;
+using namespace std;
+int main()
+{
+    int i, j, value, rows, columns, check = 0;
+
+    cout << "enter the number of rows: ";
+    cin >> rows;
+    cout << "enter the number of column: ";
+    cin >> columns;
+    int arr[rows][columns];
+    cout << "please enter the elements of array" << endl;
+    for (i = 0; i < rows; i++)
+    {
+        for (j = 0; j < columns; j++)
+        {
+            if (value == arr[i][j])
+            {
+                cout << value << "no position found"
+                     << "(" << i <<,
+                    << j << ")" << endl;
+                check - 1;
+            }
+        }
+    }
+    if (check == 0)
+    {
+        cout << value << "no found element" << endl;
+    }
+    return 0;
+}
